@@ -1,7 +1,7 @@
 {
   "name": "uint-rng",
   "repository": "github:fabiospampinato/uint-rng",
-  "description": "A tiny insorphic Random Number Generator for generating 8/16/32-bits unsigned integers.",
+  "description": "A tiny isomorphic Random Number Generator for generating 8/16/32-bits unsigned integers.",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",

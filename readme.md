@@ -1,6 +1,6 @@
 # Uint RNG
 
-A tiny insorphic Random Number Generator for generating 8/16/32-bits unsigned integers.
+A tiny isomorphic Random Number Generator for generating 8/16/32-bits unsigned integers.
 
 ## Install
 
