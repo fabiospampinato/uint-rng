@@ -1,6 +1,6 @@
 # Uint RNG
 
-A tiny isomorphic Random Number Generator for generating 8/16/32-bits unsigned integers.
+A tiny isomorphic Random Number Generator for generating 8/16/32/64-bits unsigned integers.
 
 ## Install
 
@@ -16,6 +16,7 @@ import RNG from 'uint-rng';
 RNG.get8 (); // => 72
 RNG.get16 (); // => 23291
 RNG.get32 (); // => 1129029
+RNG.get64 (); // => 16020485623009486818n
 ```
 
 ## License
