@@ -1,6 +1,6 @@
 # Uint RNG
 
-A tiny isomorphic Random Number Generator for generating 8/16/32/64-bits unsigned integers.
+A tiny isomorphic Random Number Generator for generating 1/8/16/32/64-bits unsigned integers.
 
 ## Install
 
@@ -13,6 +13,7 @@ npm install --save uint-rng
 ```ts
 import RNG from 'uint-rng';
 
+RNG.get1 (); // => 0
 RNG.get8 (); // => 72
 RNG.get16 (); // => 23291
 RNG.get32 (); // => 1129029

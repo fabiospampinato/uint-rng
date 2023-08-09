@@ -29,9 +29,30 @@ function makeRNG ( constructor: Uint8ArrayConstructor | Uint16ArrayConstructor |
 
 };
 
+function makeBitRNG ( rng: (() => number), bits: number ): (() => 0 | 1) {
+
+  let pool = 0;
+  let cursor = bits;
+
+  return (): 0 | 1 => {
+
+    if ( cursor === bits ) { // Replenishing pool
+
+      pool = rng ();
+      cursor = 0;
+
+    }
+
+    return ( pool & ( 1 << cursor++ ) ) ? 1 : 0;
+
+  };
+
+};
+
 /* MAIN */
 
 const RNG = {
+  get1: makeBitRNG ( makeRNG ( Uint8Array ), 8 ),
   get8: makeRNG ( Uint8Array ),
   get16: makeRNG ( Uint16Array ),
   get32: makeRNG ( Uint32Array ),
