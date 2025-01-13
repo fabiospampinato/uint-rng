@@ -5,13 +5,15 @@ A tiny isomorphic Random Number Generator for generating 1/8/16/32/64-bits unsig
 ## Install
 
 ```sh
-npm install --save uint-rng
+npm install uint-rng
 ```
 
 ## Usage
 
 ```ts
 import RNG from 'uint-rng';
+
+// Let's generate some random numbers
 
 RNG.get1 (); // => 0
 RNG.get8 (); // => 72
